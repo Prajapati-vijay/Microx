@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Sign up</title>
+  <style>
+    #login-wrapper{
+width: 100%;
+height: 100vh;
+/*background-color: #00418A;*/
+/*background-color: #00000059;*/
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url(https://learnwithomar.org/img/3.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-size: cover;
+/*background-blend-mode: soft-light;*/
+
+}
+.opacity{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 20;
+left: 0;
+background: linear-gradient(180deg,rgb(0 0 0 / 68%),rgba(0,0,0,.4),rgb(0 0 0 / 69%));
+}
+.login-left {
+/*  background: linear-gradient(-45deg, #1D1CE5, #0008C1, #021d7b, #153462);*/
+/* background: linear-gradient(-45deg, darkkhaki,yellow, darkkhaki, darkkhaki); */
+background-color: darkkhaki;
+background-size: 400% 400%;
+animation: gradient 15s ease infinite;
+height: 500px;
+display: flex;
+align-items: center;
+padding: 58px;
+}
+.login-right{
+background-color: white;
+height: 500px;
+display: flex;
+align-items: center;
+padding: 58px;
+/*border-radius: 8px;*/
+}
+@keyframes gradient {
+0% {
+background-position: 0% 50%;
+}
+50% {
+background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
+}
+
+
+.login-left h2{
+color: white;
+margin-bottom: 32px;
+font-size: 32px;
+}
+.login-left p,
+.login-left p a{
+color: white;
+}
+
+.login-right h2{
+font-size: 32px;
+color: black;
+}
+.login-right p{
+margin-bottom: 32px;
+}
+.login-right input{
+padding: 14px 12px;
+margin-bottom: 18px;
+border-color: #000;
+border-radius: 4px;
+font-size: 14px;
+width: 100%;
+}
+.login-btn{
+width: 100%;
+background: darkkhaki;
+border: 1px solid darkkhaki;
+color: white;
+font-size: 16px;
+}
+.form-group{
+position: relative;
+}
+.login-form label{
+position: absolute;
+top: -12px;
+background: white;
+left: 12px;
+color: #000;
+}
+.login-form input:focus .login-form label{
+color: #010ac2 !important;
+}
+.login-form input:focus{
+border-color: #010ac2;
+outline: none;
+box-shadow: none;
+}
+.login-form input:focus::placeholder{
+color: #010ac2 !important;
+}
+.line{
+width: 140px;
+height: 4px;
+background: white;
+margin-top: 36px;
+}
+.lin{
+position: absolute;
+z-index: 9999;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.login-wrapper .container{
+overflow: hidden;
+}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script> 
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="/static/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Urotaxi
+            </span>
+          </a>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="/home/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about/"> About</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/service/"> Services </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/news/"> News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact/">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
+                    Login
+                  </button>  
+                  <!-- <a class="nav-link" href="contact copy.html">Login</a><hr style="width:100%;text-align:left;margin-left:0;background-color: red;"> -->
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- service section -->
+
+  <section id="login-wrapper">
+    <div class="opacity"></div>
+    <!-- login start -->
+    <div class="container lin" style="z-index: 9999;">
+      
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="row login-main">
+            <div class="col-md-6 p-0">
+              <div class="login-left">
+                <a href=""><img src=""></a>
+                <div>
+              {% for message in messages %}
+            <div class="alert alert-{{message.tags}}" role="alert">
+              <strong>Message :</strong> {{message}}
+            </div>
+            {% endfor %}
+                  <h2>Please Sign up to continue!</h2>
+                  <p>We will verify your account and you will get an activation email from admin. You can check your course details and progress from your profile page.</p>
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 p-0">
+              <div class="login-right">
+                <form class="login-form" action="/manage/esign/" method="POST" enctype="multiple/form-data">
+                 {% csrf_token %}
+                  <h2>SignIn</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                  <div class="form-group one">
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="Name" class="form-control">
+                  </div>
+
+                  
+                  <div class="form-group one">
+                      <label>Phone number</label>
+                      <input type="number" name="Phone" placeholder="+91 91911 92292" class="form-control">
+                    </div>
+                  <div class="form-group one">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="6+ strong character" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <span>Dont have an account? <a href="" class="regbox">Register</a></span>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" name="" value="Create Account" class="login-btn">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+    <!-- login end -->
+    <!-- reg start -->
+    <div class="container reg" style="z-index: 9999;">
+      
+      <div class="row">
+        
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="row login-main">
+            <div class="col-md-6 p-0">
+              <div class="login-left" style="height: 600px;">
+                <a href=""><img src=""></a>   
+                <div>
+                  {% for message in messages %}
+                  <div class="alert alert-{{message.tags}}" role="alert">
+                    <strong>Message :</strong> {{message}}
+                  </div>
+                  {% endfor %}
+
+                  <h2>Please Sign up to continue!</h2>
+                  <p>We will verify your account and you will get an activation email from admin. You can check your course details and progress from your profile page.</p>
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 p-0">
+              <div class="login-right" style="height: 600px;">
+                <form class="login-form" action="/manage/jsign/" method="POST" enctype="multiple/form-data">
+                  {% csrf_token %}  
+                  <h2>SignUp</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                   
+                   <div class="form-group one">
+                      <select name="choice" style="width: 100%;margin-bottom: 18px;padding: 14px 12px; ">
+                          <option selected/>Select Cataory
+                          <!-- <option value="AF" disabled />Afghanistan (Disabled) -->
+                          <option value="1" /> Catagory 1 -: Watchman
+                          <option value="2" />Catagory 2 -: Maid
+                          <option value="3" />Catagory 3-: Care Taker
+                          <!-- <option value="AS" />American Samoa -->
+                       </select>
+                      <!-- <label>Phone number</label>
+                      <input type="number" name="" placeholder="+91 90922 39202" class="form-control"> -->
+                    </div>
+                    <div class="form-group one">
+                      <label>Full Name</label>
+                      <input type="text" name="name" placeholder="Name" class="form-control">
+                    </div>
+                  <div class="form-group one">
+                    <label>Phone number</label>
+                    <input type="number" name="Phone" placeholder="+91 90922 39202" class="form-control" maxlength="10" >
+                  </div>
+                  <div class="form-group two">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="6+ strong character" class="form-control">
+                  </div>
+                  
+                  <div class="mb-3">
+                    <span>Sign up Here if you want to Hire <a href="" class="login-box">Register</a></span>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" name="" value="Create Account" class="login-btn">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+    <!-- reg end -->
+  </section>
+  <!-- banner section code end -->
+
+  
+
+  <!-- end service section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding-top layout_padding2-bottom">
+    <div class="container">
+      <div class="box">
+        <div class="info_form">
+          <h4>
+            Subscribe Our Newsletter
+          </h4>
+          <form action="">
+            <input type="text" placeholder="Enter your email">
+            <div class="d-flex justify-content-end">
+              <button>
+
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="info_links">
+          <ul>
+            <li class=" ">
+              <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="">
+              <a class="" href="about.html"> About</a>
+            </li>
+            <li class="">
+              <a class="" href="service.html"> Services </a>
+            </li>
+            <li class="">
+              <a class="" href="news.html"> News</a>
+            </li>
+            <li class="">
+              <a class="" href="contact.html">Contact Us</a>
+            </li>
+            <li class="">
+              <a class="" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+        <div class="info_social">
+          <div>
+            <a href="">
+              <img src="/static/images/fb.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="/static/images/twitter.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="/static/images/linkedin.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="/static/instagram.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <div class="container">
+      <p>
+        &copy; 2021 All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="/static/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="/static/js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+
+
+  <!-- owl carousel script -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      navText: [],
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 2
+        }
+      }
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!-- custom js -->
+  <script type="text/javascript" src="/static/js/main.js"></script>
+  <script>
+      $('.login-form .one input').focus(function(){
+  $('.login-form .one label').css('color','#010ac2');
+  $('.login-form .two label').css('color','#000');
+  $('.login-form .three label').css('color','#000');
+});
+$('.login-form .two input').focus(function(){
+  $('.login-form .one label').css('color','#000');
+  $('.login-form .two label').css('color','#010ac2');
+  $('.login-form .three label').css('color','#000');
+});
+$('.login-form .three input').focus(function(){
+  $('.login-form .one label').css('color','#000');
+  $('.login-form .two label').css('color','#000');
+  $('.login-form .three label').css('color','#010ac2');
+});
+
+
+$('.login-box').click(function(e){
+  e.preventDefault();
+  $('.reg').css('transform','translatex(-700px)');
+  $('.reg').css('transition','0.5s');
+  $('.reg').css('opacity','0');
+
+});
+$('.regbox').click(function(f){
+  f.preventDefault();
+
+  $('.reg').css('transform','translatex(0px)');
+  $('.reg').css('transition','0.5s');
+  $('.reg').css('opacity','1');
+
+});
+  </script>
+  <!-- end owl carousel script -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-title text-center">
+           
+            <h4>Login</h4>
+          </div>
+          <div class="d-flex flex-column text-center">
+            <form action="/manage/login/" method="POST">
+              {% csrf_token %}
+              <div class="form-group">
+                <input type="text" class="form-control" id="email1"placeholder="Your Mobile number" name="Phone">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="password1" placeholder="Your password..." name="password">
+              </div>
+              <button type="submit" style="
+background: gold;" class="btn btn-info btn-block btn-round">Login</button>
+            </form>
+            
+            <div class="text-center text-muted delimiter">or use a social network</div>
+            <div class="d-flex justify-content-center social-buttons">
+              <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                <i class="fab fa-twitter"></i>
+              </button>
+              <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                <i class="fab fa-facebook"></i>
+              </button>
+              <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                <i class="fab fa-linkedin"></i>
+              </button>
+            </di>
+          </div>
+        </div>
+      </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <div class="signup-section">Not a member yet? <a href="Sign_up_page.html" class="text-info"> Sign Up</a>.</div>
+        </div>
+    </div>
+  </div>
+
+  
+
+</body>
+
+</html>

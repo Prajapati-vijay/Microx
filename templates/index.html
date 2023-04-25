@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <link rel="icon" href="/static/img_set/Red_M_Letter_Mosaic_Logo_Template__1_-removebg-preview_fix.png" width="150%" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+      
+  <title>Micro-X </title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="/static/css/responsive.css" rel="stylesheet" />
+
+  <script id="gs-sdk" src='//www.buildquickbots.com/botwidget/v3/demo/static/js/sdk.js?v=3' key="2bxx79xx-0dxb-4xx4-ac71-x4a42xxxxxxx"></script>
+  <style>
+    #lodder{
+      background:#fff url('/static/images/Red\ M\ Letter\ Mosaic\ Logo\ Template.gif') center no-repeat;
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      z-index: 100000;
+    }
+    .cd {
+      background-color: #8e44ad;
+      color: #fff;
+      font-family: "Roboto Mono", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      margin: 0;
+    }
+    
+    .counter-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .counter {
+      font-size: 60px;
+      margin-top: 10px;
+    }
+    
+    @media (max-width: 580px) {
+      body {
+        flex-direction: column;
+      }
+    }
+    
+    .wrap:hover{
+      transform: translateY(-7px);
+    }
+    .sec-title{
+    position:relative;
+    margin-bottom:60px;
+}
+.info_section .info_form form button{
+  height: 42.5px !important;
+}
+
+.sec-title .title{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fdda33;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.sec-title h2{
+    position:relative;
+    display: inline-block;
+    font-size:60px;
+    line-height:1em;
+    color:#212639;
+    font-weight:400;
+    padding-bottom: 30px;
+    z-index: 2;
+}
+
+
+.sec-title.active h2:before{
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.sec-title h2:after{
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 3px;
+    width: 50px;
+    content: "";
+    background-color: #d1d2d6;
+}
+
+.sec-title.light h2{
+    color: #ffffff;
+}
+
+.sec-title.light h2:after{
+    opacity: .20;
+    background-color: #ffffff;
+}
+
+.sec-title.text-center h2:before,
+.sec-title.text-center h2:after{
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.sec-title.text-center h2:before{
+    opacity: .60;
+}
+
+.speakers-section{
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 145px 0 90px;
+    overflow:hidden;
+}
+
+.speaker-block{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.speaker-block .inner-box{
+    position: relative;
+}
+
+.speaker-block .image-box{
+    position: relative;
+    padding: 20px;
+    background-color: rgba(255,255,255,.15);
+    overflow: hidden;
+}
+
+.speaker-block .image-box .image:after,
+.speaker-block .image-box:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background-color: #ffffff;
+    content: "";
+    -webkit-transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+    -ms-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+
+.speaker-block .inner-box:hover .image-box .image:after,
+.speaker-block .inner-box:hover .image-box:before{
+    height: 100%;
+}
+
+.speaker-block .image-box .image:after{
+    opacity: .40;
+    z-index: 1;
+    top: auto;
+    bottom: 0;
+    background-color: #4a34a5;
+}
+
+.speaker-block .image-box .image{
+    position: relative;
+    margin-bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.speaker-block .image-box .image img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.speaker-block .social-links{
+    position: absolute;
+    left: 0;
+    bottom: -140px;
+    padding: 20px;
+    width: 100%;
+    z-index: 9;
+    -webkit-transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+    -ms-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+
+.speaker-block .social-links ul{
+    position: relative;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: rgba(253, 218, 51, 0.85);
+}
+
+.speaker-block .social-links li{
+    position: relative;
+    display: inline-block;
+    margin: 0 9px;
+}
+
+.speaker-block .social-links li a{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.speaker-block .social-links li a:hover{
+    color: #fac201;
+}
+
+.speaker-block .inner-box:hover .social-links{
+    bottom: 0;
+}
+
+.speaker-block .caption-box{
+    position: relative;
+    padding-top: 30px;
+}
+
+.speaker-block .caption-box .name{
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 1em;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.speaker-block .caption-box .name a{
+    color: #ffffff;
+    display: inline-block;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.speaker-block .caption-box .name a:hover{
+    color: #fdda33;
+}
+
+.speaker-block .caption-box .designation{
+    position: relative;
+    display: block;
+    font-size: 17px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 400;
+    opacity: .70;
+}
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        img {
+    max-width: 100%;
+    height: auto;
+}
+    .slider_section .box .img-box img{
+      width: 70%!important;
+    }
+    .about_section .img-box::before{
+      background-color:white;
+      color: rgba(0, 0, 0, 0.07);
+    }
+    li:hover{
+      /* background-color: blue; */
+      font-weight: bolder;
+    }
+    .container2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 .card{
+    position: relative;
+    width: 500px;
+    height: 350px;
+    margin: 50px;
+    display: flex;
+    transition: 0.5s;
+    justify-content: flex-start;
+    align-items: center;
+    /* background: linear-gradient(45deg, #202020a2, #302b2b) */
+    background-color: transparent;
+    color: #111;
+}
+
+.container2 .card img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 400px;
+    transition: 0.5s;
+}
+
+.container2 .card:hover img{
+    left: 60%;
+    height: 450px;
+}
+.container2 .card .content{
+    position: relative;
+    /* width: 40%; */
+    margin-left: -100%;
+    left: 20%;
+    padding: 20px 20px 20px 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.container2 .card:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.container2 .card .content h2
+{
+    color: #111;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1em;
+
+}
+
+.container2 .card .content p{
+    color: #111;   
+}
+
+.container2 .card .content a{
+    position: relative;
+    color: #111;
+    background: rgb(239, 239, 7);
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (max-width: 991px){
+    .container2 .card{
+        width: auto;
+        max-width: 600px;
+        align-items: flex-start;
+    }
+    .container2 .card:hover{
+        height: 600px;
+
+    }
+    .container2 .card:hover img{
+        left: 50%;
+        height: 350px;
+    }
+    .container2{
+      display: none;
+    }
+    .container2 .card .content{
+        width: 100%;
+        left: 0;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 767px){
+    .container2{
+        flex-direction: column;
+    }
+    .container2 .card{
+        margin: 40px 20px;
+    }
+}
+
+@media (max-width: 420px){
+    .container2 .card .content{
+        padding: 30px;
+    }
+
+    .container2 .card:hover img{
+        height: 300px;
+    }
+}
+.sm:hover{
+  /* width:10%; */
+  transform: rotate(20deg);
+}
+.sm {
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: 7;
+}
+
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  50%  {left:-100px; top:0px;}
+  100%  {left:-200px; top:0px;}
+}
+.sm2{
+  /* transform: rotate(20deg); */
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 0.5s;
+}
+.sm2:hover{
+  transform: rotate(120deg);
+  
+}
+.sm3{
+  /* transform: rotate(20deg); */
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.5s;
+}
+.sm3:hover{
+  transform: rotate(120deg);
+  
+}
+details {
+  margin: 0 auto ;
+  background: #282828;
+  margin-bottom: .5rem;
+  box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+summary {
+  padding: 1rem;
+  display: block;
+  background: #333;
+  padding-left: 2.2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+summary:before {
+  content: '';
+  border-width: .4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  top: 1.3rem;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: .2rem 50%;
+  transition: .25s transform ease;
+}
+
+/* THE MAGIC 🧙‍♀️ */
+details[open] > summary:before {
+  transform: rotate(90deg);
+}
+
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+details > ul {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+.details-expanded {
+	padding: 0 2rem;
+}
+.akg {
+  background: #222;
+  height: 100vh;
+  font-family: sans-serif;
+  color:white;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+pre {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+    /* hr:hover{
+      width:50%;text-align:left;margin-left:0;
+    } */
+
+    .container {
+  padding: 2rem 0rem;
+}
+
+@media (min-width: 576px){
+  .modal-dialog {
+    max-width: 400px;
+    
+    .modal-content {
+      padding: 1rem;
+    }
+  }
+}
+
+.modal-header {
+  .close {
+    margin-top: -1.5rem;
+  }
+}
+
+.form-title {
+  margin: -2rem 0rem 2rem;
+}
+
+.btn-round {
+  border-radius: 3rem;
+}
+
+.delimiter {
+  padding: 1rem;  
+}
+
+.social-buttons {
+  .btn {
+    margin: 0 0.5rem 1rem;
+  }
+}
+
+.signup-section {
+  padding: 0.3rem 0rem;
+}
+
+.c-dashboardInfo {
+  margin-bottom: 15px;
+}
+.c-dashboardInfo .wrap {
+  transition: all 0.3s ease 0s;
+  background: #ffffff;
+  box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 25px 20px;
+  height: 100%;
+}
+.c-dashboardInfo__title,
+.c-dashboardInfo__subInfo {
+  color: #6c6c6c;
+  font-size: 1.18em;
+}
+.c-dashboardInfo span {
+  display: block;
+}
+.c-dashboardInfo__count {
+  font-weight: 600;
+  font-size: 2.5em;
+  line-height: 64px;
+  color: #323c43;
+}
+.c-dashboardInfo .wrap:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  content: "";
+}
+
+.c-dashboardInfo:nth-child(1) .wrap:after {
+  background: linear-gradient(82.59deg, #00c48c 0%, #00a173 100%);
+}
+.c-dashboardInfo:nth-child(2) .wrap:after {
+  background: linear-gradient(81.67deg, #0084f4 0%, #1a4da2 100%);
+}
+.c-dashboardInfo:nth-child(3) .wrap:after {
+  background: linear-gradient(69.83deg, #0084f4 0%, #00c48c 100%);
+}
+.c-dashboardInfo:nth-child(4) .wrap:after {
+  background: linear-gradient(81.67deg, #ff647c 0%, #1f5dc5 100%);
+}
+.c-dashboardInfo__title svg {
+  color: #d7d7d7;
+  margin-left: 5px;
+}
+.MuiSvgIcon-root-19 {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 24px;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.btn.bi:hover{
+  transform: translateY(-7px);
+}
+ul>li{
+  position: relative;
+}
+ul>li:before{
+  height: 2%;
+  position:absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+}
+.but {
+  --border-width: 2px;
+  --border-radius: 22px;
+  --color-1: #f19f39;
+  --color-2: #de222c;
+}
+.but {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color:gold;
+  width: 120px;
+  position: relative;
+  background: linear-gradient(to right, orange, red),
+    linear-gradient(to right, orange, red);
+  background-position: var(--border-radius) 0, var(--border-radius) 100%;
+  background-repeat: no-repeat;
+  background-size: calc(100% - var(--border-radius) - var(--border-radius))
+    var(--border-width);
+  padding: 14px 24px;
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+.but:before,
+.but:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: var(--border-radius);
+  top: 0;
+  bottom: 0;
+}
+
+.but:before {
+  left: 0;
+  border: var(--border-width) solid var(--color-1);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  border-right-color: transparent;
+}
+
+.but:after {
+  right: 0;
+  border: var(--border-width) solid var(--color-2);
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  border-left-color: transparent;
+}
+
+  </style>
+</head>
+
+<body>
+  <div id="lodder"></div>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              <img src="/static/images/Red_M_Letter_Mosaic_Logo_Template__2_-removebg-preview_22.png" style="margin-top: -5%;margin-bottom:-8%;" width="50%" alt="">
+            </span>
+          </a>
+          <button class="navbar-toggler"type="button" class="close" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav navbar-collapse">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/home/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about/"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/service/"> Services </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/news/"> News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact/">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <button type="button" class="btn btn-outline-light btn-round but" data-toggle="modal" data-target="#loginModal">
+                    Login
+                  </button>  
+                  <!-- <a class="nav-link" href="contact copy.html">Login</a><hr style="width:100%;text-align:left;margin-left:0;background-color: red;"> -->
+                </li>
+                <!-- <div class="container">
+                  
+                </div> -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section ">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="box">
+              <!-- <div class="detail-box">
+                <h4>
+                  Welcome to
+                </h4>
+                <h1>
+                  Micro-X
+                </h1>
+              </div> -->
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+
+                    <div class="img-box">
+                       <img src="/static/img_set/2.png" alt="">
+                      <!-- <img src="images/slider-img.png" alt=""> -->
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-box">
+                       <img src="/static/img_set/Business merger-amico.png" alt="">
+                      <!-- <img src="images/slider-img.png" alt=""> -->
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-box">
+                        <img src="/static/img_set/Car wash-bro.png" alt="">
+                       
+                      <!-- <img src="images/slider-img.png" alt=""> -->
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-box">
+                       <img src="/static/img_set/Knitting-amico (1).png" width="10%" alt="">
+                      <!-- <img src="images/slider-img.png" alt=""> -->
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-box">
+                      <img src="/static/img_set/Banknote-amico.png" alt="">
+                      <!-- <a href="https://storyset.com/user">User illustrations by Storyset</a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="btn-box">
+                <a href="" class="btn-1">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 ">
+              <div class="container2">
+                <div class="card">
+                    <div class="content">
+                        <h2>WELCOME<br> TOUR</h2>
+                        <p>
+                            Step 1-: Login<br>
+                            Step 2-: Easy Navigation<br>
+                            Step 3-: Verified People<br>
+                            Step 4-: 24/7 Support<br>
+                        </p>
+                        <a href="/signup/" style="background-color:gold;border:1px solid black">SINGUP</a>
+                    </div>
+                    <img src="/static/img_set/shape.png"/>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-title text-center">
+            <h4>Login</h4>
+          </div>
+          <div class="d-flex flex-column text-center">
+            <form action="/manage/login/" method="POST">
+              {% csrf_token %}
+              <div class="form-group">
+                <input type="tel" class="form-control" id="email1"placeholder="Your Mobile Number..." name="Phone">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="password1" placeholder="Your password..." name="password">
+              </div>
+              <button type="submit" style="background: gold;" class="btn btn-info btn-block btn-round">Login</button>
+            </form>
+            
+            <div class="text-center text-muted delimiter">or use a social network</div>
+            <div class="d-flex justify-content-center social-buttons">
+              <button type="button" class="btn btn-outline-warning btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-outline-warning btn-round" data-toggle="tooltip" data-placement="top" title="Google">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                  <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-outline-warning btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <div class="signup-section">Not a member yet? <a href="Sign_up_page.html" class="text-info"> Sign Up</a>.</div>
+        </div>
+    </div>
+  </div>
+  </div>
+  
+  <!-- about section -->
+  <section class="about_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-5 offset-lg-2 offset-md-1">
+          <div class="detail-box">
+            <h2>
+              About <br>
+              Our Company
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamm
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="container2">
+            <div class="card">
+              <img src="/static/img_set/Take Away-cuate.png" alt="">
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding" style="padding-top: 0px;">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Our <br>
+          Services
+        </h2>
+      </div>
+      <div class="service_container">
+        <div class="box">
+          <div class="img-box sm">
+            <img src="/static/img_set/City driver-pana.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Private Driver
+            </h5>
+            <p>
+              Lorem ipsum dolor sit ame
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box sm2">
+            <img src="/static/img_set/Pizza maker-bro.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              House Work
+            </h5>
+            <p>
+              Lorem ipsum dolor sit ame
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box sm2">
+            <img src="/static/img_set/Gardening-cuate.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+            GARDING
+            </h5>
+            <p>
+              Lorem ipsum dolor sit ame
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+  
+  <!-- news section -->
+
+  <!-- end app section -->
+  <div class="container-fluid" style="background-color:#222;padding: 5%;">
+  <section, class="akg">
+    <h1 style="text-align:center; margin-bottom:5%;">FAQ block</h1>
+    <hr style="width:100%;text-align:left;height:6px;margin-left:0;background-color: yellow;">
+
+<details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <summary itemprop="name">What is Micro-X</summary>
+    <div class="details-expanded" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p>Micro-X</p>
+    <ol>
+    <li>Micro-x is an idea about a single integrated platform that allows verified skilled and experienced 
+      people to connect with users looking for specific jobs , Cooking , Household works , watch man , 
+      gardener etc.</li>
+    <li>Our match algorithm identify professional who are closest to the users requirements 
+      and Available near by area</li>
+    </ol>
+  </div>
+</details>
+
+<details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <summary itemprop="name">Summary</summary>
+  <div class="details-expanded" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <h2>Test headline</h2>
+    <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    </ul>
+  </div>
+</details>
+<details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <summary itemprop="name">Summary</summary>
+    <div class="details-expanded" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    </ul>
+  </div>
+</details>
+<details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <summary itemprop="name">Summary</summary>
+    <div class="details-expanded" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    </ul>
+  </div>
+</details>
+<details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <summary itemprop="name">Summary</summary>
+    <div class="details-expanded" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    </ul>
+  </div>
+</details>
+  </section>
+</div>
+
+
+
+<div id="root">
+  <div class="container pt-5">
+    <div class="row align-items-stretch">
+      <div class="c-dashboardInfo col-lg-3 col-md-6">
+        <div class="wrap counter-container">
+          <h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Website Visit<svg
+              class="MuiSvgIcon-root-19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+              <path fill="none" d="M0 0h24v24H0z"></path>
+            </svg></h4><span class="hind-font caption-12 c-dashboardInfo__count counter" data-target="750">€10,500</span>
+            <span
+            class="hind-font caption-12 c-dashboardInfo__subInfo">Last month: 300</span>
+        </div>
+      </div>
+      <div class="c-dashboardInfo col-lg-3 col-md-6">
+        <div class="wrap counter-container">
+          <h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Active Person<svg
+              class="MuiSvgIcon-root-19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+              <path fill="none" d="M0 0h24v24H0z"></path>
+            </svg></h4><span class="hind-font caption-12 c-dashboardInfo__count counter" data-target="500">€500</span>
+        </div>
+      </div>
+      <div class="c-dashboardInfo col-lg-3 col-md-6">
+        <div class="wrap counter-container">
+          <h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Available Jobs<svg
+              class="MuiSvgIcon-root-19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+              <path fill="none" d="M0 0h24v24H0z"></path>
+            </svg></h4><span class="hind-font caption-12 c-dashboardInfo__count counter" data-target="250">€5000</span>
+        </div>
+      </div>
+      <div class="c-dashboardInfo col-lg-3 col-md-6">
+        <div class="wrap counter-container">
+          <h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Available Cities<svg
+              class="MuiSvgIcon-root-19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+              <path fill="none" d="M0 0h24v24H0z"></path>
+            </svg></h4><span class="hind-font caption-12 c-dashboardInfo__count counter" data-target="950">6,40%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<section class="speakers-section" style="background:#282828;padding-top: 100px;" >
+  <div class="parallax-scene parallax-scene-2 anim-icons">
+      <span data-depth="0.40" class="parallax-layer icon icon-circle-5"></span>
+      <span data-depth="0.99" class="parallax-layer icon icon-circle-5"></span>
+  </div>
+
+  <div class="container">
+      <div class="sec-title light text-center">
+          <span class="title">Our Team</span>
+          <h4>Simply dummy text</h4>
+      </div>
+
+      <div class="row">
+    
+          <div class="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+              <div class="inner-box">
+                  <div class="image-box">
+                      <figure class="image"><img src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="">
+                          <div class="social-links">
+                              <ul>
+                                 <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                </svg></li> 
+                                 <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                                  <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                                </svg></li> 
+                                 <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg></li> 
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                </svg></li> 
+                              </ul>
+                          </div>
+                      </figure>
+                  </div>
+                  <div class="caption-box">
+                      <h4 class="name"><a href="#">Lorem Ipsum </a></h4>
+                      <span class="designation">simply dummy text</span>
+                  </div>
+              </div>
+          </div>
+
+     
+          <div class="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+              <div class="inner-box">
+                  <div class="image-box">
+                      <figure class="image"><img src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="">
+                          <div class="social-links">
+                            <ul>
+                              <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                               <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                             </svg></li> 
+                              <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                               <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                             </svg></li> 
+                              <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                               <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                             </svg></li> 
+                             <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                               <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                             </svg></li> 
+                           </ul>
+                          </div>
+                      </figure>
+                  </div>
+                  <div class="caption-box">
+                      <h4 class="name"><a href="#">Lorem Ipsum </a></h4>
+                      <span class="designation">simply dummy text</span>
+                  </div>
+              </div>
+          </div>
+
+   
+          <div class="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
+              <div class="inner-box">
+                  <div class="image-box">
+                      <figure class="image"><img src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="">
+                          <div class="social-links">
+                            <ul>
+                              <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                               <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                             </svg></li> 
+                              <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                               <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                             </svg></li> 
+                              <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                               <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                             </svg></li> 
+                             <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                               <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                             </svg></li> 
+                           </ul>
+                          </div>
+                      </figure>
+                  </div>
+                  <div class="caption-box">
+                      <h4 class="name"><a href="#">Lorem Ipsum </a></h4>
+                      <span class="designation">simply dummy text</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- why section -->
+
+  <section class="why_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Why <br>
+          Choose Us
+        </h2>
+      </div>
+      <div class="why_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="/static/images/delivery-man-white.png" alt="" class="img-1">
+            <img src="/static/images/delivery-man-black.png" alt="" class="img-2">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Verify
+            </h5>
+            <p>
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="/static/images/shield-white.png" alt="" class="img-1">
+            <img src="/static/images/shield-black.png" alt="" class="img-2">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Safe and Secure
+            </h5>
+            <p>
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="/static/images/repairing-service-white.png" alt="" class="img-1">
+            <img src="/static/images/repairing-service-black.png" alt="" class="img-2">
+          </div>
+          <div class="detail-box">
+            <h5>
+              24x7 support
+            </h5>
+            <p>
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end why section -->
+
+  <div id="supportchatwidget" style="display: block;"><div id="widget-close" class="tc-widget widget-fadeIn" style="background-color: gold; bottom: 390px; width: 320px; border-radius: 4px 4px 0px 0px;"><div class="logo-img-icon" style="border-radius: 40px;"><img src="/static/images/robot.png" width="45" height="45" style="vertical-align: top;"></div><span id="max-msg" style="font-size: 16px; color: rgb(255, 255, 255);">Talk to Mr x</span><span class="right" onclick="tc.funcs.toggleWidget(false)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 11"><path fill="#ffffff" d="M200,205.15l8.1-8.49a1.25,1.25,0,0,0-1.81-1.73l-7.21,7.55-7.46-7.59c-1.13-1.15-2.94.58-1.81,1.73l8.38,8.53A1.33,1.33,0,0,0,200,205.15Z" transform="translate(-189.5 -194.51)"></path></svg></span></div><div id="widget-open" class="tc-widget widget-type rectangular-widget" onclick="tc.funcs.toggleWidget(true)" style="/* background-color: rgb(118, 89, 153); */width: 250px;background: gold;border-radius: 4px 4px 0px 0px;display: block;"><div class="logo-img-icon" style="border-radius: 40px;"><img src="/static/images/robot.png" width="45" height="45"></div><span id="min-msg" style="font-size: 16px; color: rgb(255, 255, 255);">Talk to Mr. X</span><span class="bedge">0</span></div><div id="widget" class="tc-widget widget-fadeIn" style="width: 320px; height: 390px;"><iframe id="iframe_widget"></iframe></div></div>
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding-top layout_padding2-bottom">
+    <div class="container">
+      <div class="box">
+        <div class="info_form">
+          <h4>
+            Subscribe Our Newsletter
+          </h4>
+          <form action="">
+            <input type="text" placeholder="Enter your email">
+            <div class="d-flex justify-content-end">
+              <button>
+
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="info_links">
+          <ul>
+            <li class=" ">
+              <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="">
+              <a class="" href="about.html"> About</a>
+            </li>
+            <li class="">
+              <a class="" href="service.html">Services </a>
+            </li>
+            <li class="">
+              <a class="" href="news.html"> News</a>
+            </li>
+            <li class="">
+              <a class="" href="contact.html">Contact Us</a>
+            </li>
+            <li class="">
+              <a class="" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+        <div class="info_social">
+          <div>
+            <a href="">
+              <img src="/static/images/fb.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="/static/images/twitter.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="/static/images/linkedin.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="/static/images/instagram.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <div class="container">
+      <p>
+        &copy; 2023 All Rights Reserved By
+        <a href="https://html.design/">By Micro-x</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="/static/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="/static/js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+
+
+  <!-- owl carousel script -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      navText: [],
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 2
+        }
+      }
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- end owl carousel script -->
+  <!-- <script>
+    $(document).ready(function() {             $('#loginModal').modal('show');
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+});
+  </script> -->
+  <script>
+    const counters = document.querySelectorAll(".counter");
+
+counters.forEach((counter) => {
+  counter.innerText = "0";
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+    const count = +counter.innerText;
+    const increment = target / 200;
+    if (count < target) {
+      counter.innerText = `${Math.ceil(count + increment)}`;
+      setTimeout(updateCounter, 1);
+    } else counter.innerText = target;
+  };
+  updateCounter();
+});
+
+  </script>
+  <script>
+    $(function(){ 
+      var navMain = $(".navbar-collapse");
+ 
+      navMain.on("click", "a", null, function () {
+          navMain.collapse('hide');
+      });
+  });
+  </script>
+  <script>
+    var lodder = document.getElementById("lodder");
+    window.addEventListener("load",function(){
+      lodder.style.display = "none";
+    })
+  </script>
+
+</body>
+</html>

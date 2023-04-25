@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <!-- <title>Micro-X News</title> -->
+
+
+  <!-- slider stylesheet -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="/static/css/responsive.css" rel="stylesheet" />
+  <title>Micro-X Profile Page</title>
+    <style>
+      .list-group-item.active {
+        background: gold !important;
+        color: black;
+        font-weight: bold;
+      }
+      .list-group-item.active{
+        border: gold;
+      }
+      @media screen and (max-width: 680px) {
+        .card {
+          background-color: lightgreen;
+          display: none;
+        }
+        table {
+          text-align: center;
+      }
+      }
+    </style>
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Micro-X
+            </span>
+          </a>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="/map1/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact/">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    {{request.user.first_name}}
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/profile">Profile</a></li>
+                    <li><a class="dropdown-item" href="/manage/logout">Logout</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+  {% for message in messages %}    
+  <div class="alert alert-{{message.tags}}" role="alert">
+    <strong>Message :</strong> {{message}}&#128578; 
+  </div>
+  {% endfor %}  
+  <section class="service_section layout_padding" style="padding-top: 0px;height: 0;margin-left: 150px;border: none;">
+    <div class="container">
+      <div class="heading_container" style="font-size: 30px;">
+        <h2>
+          Micro-X <br>
+          Avtaars
+        </h2>
+      </div>
+      
+    </div>
+  </section>
+
+  <div class="container" style="margin-top:5%;">
+    <div class="row">
+        <div class="col-3">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Profile</a>
+            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Available Jobs</a>
+            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-pro" role="tab" aria-controls="profile">Micro-X Recommended</a>
+            <a class="list-group-item list-group-item-action" id="list-messages-list"  style="overflow:hidden;" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Application Status</a>
+            <!-- <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a> -->
+          </div>
+        </div>   
+        <div class="col-6">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                <div class="media">
+                    <img src="/static/img_set/user.png" class="mr-3" alt="..." style="height:120px;">
+                    <div class="media-body">
+                    </br>
+                        <h2 class="mt-0" style="text-transform:uppercase">{{request.user.first_name}}<img src="/static/img_set/verify.png" alt="" width="40" height="40"></h2>
+                      
+
+                    </div>
+                  </div>
+                  <div class="media" style="margin-top:5%;">
+                    <div class="media-body">
+                      <h6 class="mt-0" style="text-transform:uppercase">City :{{request.user.city}}</h6>
+                      <h6 class="mt-0">Mobile No :{{request.user.username}}</h6>
+                                        </div>
+                  </div>
+                  <a href="/manage/logout"><button type="button" class="btn btn-outline-danger">Logout</button></a>
+            </div>
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">City</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Apply</th>
+                  
+                    
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for i in j  %}
+                  <tr> 
+                    <th scope="row">{{i.name}}</th>    
+                    <td>{{i.user.city}}</td>
+                    <td>{{i.amount}}</td>      
+                    <td><a href="/apply/{{i.id}}"><button type="submit" class="btn btn-outline-primary">Apply</button></a></td>
+                  </tr>
+                  {% endfor %}
+                        </tbody>
+              </table>
+              
+              </table>
+              
+              
+            </div>
+            <div class="tab-pane fade" id="list-pro" role="tabpanel" aria-labelledby="list-profile-list">
+
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">City</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Apply</th>
+                  
+                    
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                 
+                  <tr> 
+                    <td scope="row">Harshit Singh</td>    
+                   
+                    <td>Delhi</td>      
+                    <td>20000</td>
+                    <td><a href=""><button type="submit" class="btn btn-outline-primary">Apply</button></a></td>
+
+                  </tr>
+                 
+                </tbody>
+              </table>
+              
+              </table>
+              
+              
+            </div>
+            
+            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Employer Name</th>
+                        <th scope="col">Employer_number</th>
+                        <th scope="col">Status</th>
+                       
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for i in s  %}
+                      <tr> 
+                        <th scope="row">{{i.Employer_Name}}</th>    
+                        
+                        <td>{{i.Employer_No}}
+                        </td>     
+                        
+                        <td>{{i.status}}</td>
+                        </tr>
+                      {% endfor %}
+                            </tbody>
+    
+                  </table>
+                  
+                 
+            </div>
+            <!-- <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div> -->
+          </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="/static/images/micro2.png" style="width:280px; height:145px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button type="button" class="btn btn-outline-warning">Warning</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;margin-top:5%;">
+                <img src="/static/images/micro.png" style="width:280px; height:145px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <!-- <h5 class="card-title">Card title</h5> -->
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button type="button" class="btn btn-outline-warning">Warning</button>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                <div class="card" style="width: 18rem;">
+                    <img src="/static/images/micro2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <!-- <h5 class="card-title">Card title</h5> -->
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+
+  <!-- news section -->
+  <!-- <script src="https://unpkg.com/tailwindcss-jit-cdn"></script> -->
+<
+
+  <!-- end news section -->
+
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding-top layout_padding2-bottom">
+    <div class="container">
+      <div class="box">
+        <div class="info_form">
+          <h4>
+            Subscribe Our Newsletter
+          </h4>
+          <form action="">
+            <input type="text" placeholder="Enter your email">
+            <div class="d-flex justify-content-end">
+              <button>
+
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="info_links">
+          <ul>
+            <li class=" ">
+              <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="">
+              <a class="" href="about.html"> About</a>
+            </li>
+            <li class="">
+              <a class="" href="service.html"> Services </a>
+            </li>
+            <li class="">
+              <a class="" href="news.html"> News</a>
+            </li>
+            <li class="">
+              <a class="" href="contact.html">Contact Us</a>
+            </li>
+            <li class="">
+              <a class="" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+        <div class="info_social">
+          <div>
+            <a href="">
+              <img src="/static/images/fb.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="/static/images/twitter.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="/static/images/linkedin.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="/static/images/instagram.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <div class="container">
+      <p>
+        &copy; 2021 All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="/static/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="/static/js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+
+
+  <!-- owl carousel script -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      navText: [],
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 2
+        }
+      }
+    });
+  </script>
+  <script>
+    console.log("Hello")
+    function rand(){
+      return "+91 7289999601"
+    }
+  </script>
+  <!-- end owl carousel script -->
+  
+
+</body>
+
+</html>
